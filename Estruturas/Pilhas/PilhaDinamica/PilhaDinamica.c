@@ -66,6 +66,7 @@ int pop(Pilha *p){
     sai = p->topo;
     auxiliar = sai->info;
     p->topo = sai->proximo;
+    free(sai);
 
     return auxiliar;
 
